@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainblock {
+    background-color: #ffccff;
+    width: 100%;
+}
+
+/* Header classes and styling */
+
+.headerdiv {
+    background-image: linear-gradient(#ff9900 25%, #ff8899 75%, #ffccff 100%);
+    width: 100%;
+    height: 14em;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerdiv {
+        height: 4em;
+    }
+}
+
+.headerbg {
+    background-blend-mode: hard-light;
+    background-image: linear-gradient(#ff9900 25%, #ff8899 75%, #ffccff 100%), url('../media/design.png');
+    background-size: 22%;
+    background-position: left;
+    background-position-x: 2%;
+    background-repeat: no-repeat;
+    float: left;
+    width: 50%;
+    height: inherit;
+}
+
+.headerbg1 {
+    background-blend-mode: hard-light;
+    background-image: linear-gradient(#ff9900 25%, #ff8899 75%, #ffccff 100%), url('../media/design.png');
+    background-size: 22%;
+    background-position: right;
+    background-position-x: 98%;
+    background-repeat: no-repeat;
+    float: right;
+    width: 50%;
+    height: inherit;
+}
+
+.headertext {
+    background-color: transparent;
+    background-size: 50% auto;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    /* font-size: 15vw;           */
+    font-size: 25vw;
+    /* padding-bottom: 35px; */
+}
+
+/* Footer classes and styling */
+
+.footer {
+    background-color: #fdcefd;
+    /*background-image: linear-gradient(#5477b7 40%, #7face3 80%, #86b4e8 100%);*/
+    position: absolute;
+    width: 100%;
+}
+
+.footer a {
+    margin: 10 8px;
+}
+
+.footer p {
+    font-size: 16px;
+    color: #fff;
+    margin: 8px;
+}
+
+/* Paragraph styling */
+
+p {
+    color: #0d0d0d;
+    font-family: THSarabun;
+    font-size: 18px;
+    margin: 0;
+}
+
+.blurb {
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .blurb {
+        font-size: 18px;
+    }
+}
