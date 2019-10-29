@@ -4,25 +4,36 @@ body {
     min-width: 420px;
 }
 
-.mainblock {
-    background-color: #fff;
-    width: 100%;
-}
-
 /* Header classes and styling */
 
 .headerdiv {
-    background-image: linear-gradient(#ff9900 25%, #ff8899 75%, #ffccff 100%);
+    background-color: #ff9900;
     width: 100%;
-    height: 300px;
+    height: 64px;
 }
 
 @media only screen and (max-width: 600px) {
     .headerdiv {
-        height: 180px;
+        height: 48px;
     }
 }
 
+.headerfg {
+    background-color: transparent;
+    background-size: 15% auto;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerfg {
+        background-size: 30% auto;
+    }
+}
+
+/*
 .headerbg {
     background-blend-mode: hard-light;
     background-image: linear-gradient(#ff9900 25%, #ff8899 75%, #ffccff 100%), url('../media/design.png');
@@ -55,25 +66,7 @@ body {
     width: 100%;
     height: inherit;
 }
-
-/* Footer classes and styling */
-
-.footer {
-    background-color: #fdcefd;
-    /*background-image: linear-gradient(#5477b7 40%, #7face3 80%, #86b4e8 100%);*/
-    position: absolute;
-    width: 100%;
-}
-
-.footer a {
-    margin: 10 8px;
-}
-
-.footer p {
-    font-size: 16px;
-    color: #fff;
-    margin: 8px;
-}
+*/
 
 /* Navibar styling */
 
@@ -86,13 +79,14 @@ body {
 }
 
 .navibtn {
-    background-color: #ffedb5;
+    background-color: #ff9900;
     border: none;
     color: #cc3300;
     display: block;
-    font-size: 24px;
+    font-size: 18px;
     margin: 0;
     outline: none;
+    text-align: left;
     width: 100%;
     height: 48px;
 }
@@ -100,7 +94,7 @@ body {
 .navibtn:after {
     background: transparent;
     content: "Open Menu...";
-    padding-right: 32px;
+    padding-left: 32px;
     position: relative;
     top: -8px;
 }
@@ -112,68 +106,32 @@ body {
 }
 
 #navlink {
-	background-color: #ccc;
-	display: none;
-	overflow: hidden;
+	background-color: #ffedb5;
+    display: none;
+    overflow: hidden;
 }
 
-.mainanchor {
-	border: none;
-	color: #333;
-	display: block;
-	float: left;
-	font-family: THSarabun;
-	font-size: 16px;
-	text-align: center;
-	text-decoration: none;
-	min-height: 64px;
-	width: 50%;
-}
-
-#navlink a {
+.navilinks {
 	border: none;
 	border-top: solid #888 1px;
-	color: #333;
-	display: block;
+	color: #cc3300;
+    display: block;
+    float: left;
 	font-family: THSarabun;
-	font-size: 16px;
-	padding: 0 16px;
+	font-size: 24px;
 	text-align: center;
 	text-decoration: none;
 	min-height: 48px;
-	width: 100%;
+    width: 25%;
 }
 
-/* Paragraph styling */
-
-p {
-    color: #0d0d0d;
-    font-family: THSarabun;
-    font-size: 4vw;
-    margin: 0;
-}
-
-.blurb {
-    color: #ffccff;
-    font-size: 3vw;
-    text-align: center;
-}
-
-.headerfont {
-    color: #0d0d0d;
-    font-family: Tangerine;
-    font-size: 6vw;
-    text-align: center;
+.navilinks:hover {
+    background-color: #ffff99;
 }
 
 @media only screen and (max-width: 600px) {
-    .blurb {
-        font-size: 18px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .headerfont {
-        font-size: 18px;
+    .navilinks {
+        float: none;
+        width: 100%;
     }
 }
