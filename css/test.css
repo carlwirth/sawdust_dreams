@@ -52,46 +52,11 @@ body {
     }
 }
 
-
-/*
-.headerbg {
-    background-blend-mode: hard-light;
-    background-image: linear-gradient(#ff9900 25%, #ff8899 75%, #ffccff 100%), url('../media/design.png');
-    background-size: 22%;
-    background-position: left;
-    background-position-x: 2%;
-    background-repeat: no-repeat;
-    float: left;
-    width: 50%;
-    height: inherit;
-}
-
-.headerbg1 {
-    background-blend-mode: hard-light;
-    background-image: linear-gradient(#ff9900 25%, #ff8899 75%, #ffccff 100%), url('../media/design.png');
-    background-size: 22%;
-    background-position: right;
-    background-position-x: 98%;
-    background-repeat: no-repeat;
-    float: right;
-    width: 50%;
-    height: inherit;
-}
-
-.headerfg {
-    background-color: transparent;
-    background-size: 50% auto;
-    background-position: 50% 25%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: inherit;
-}
-*/
-
 /* Navibar styling */
 
 .stickytop {
     display: block;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     width: 100%;
