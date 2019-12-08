@@ -13,20 +13,20 @@ body {
 /* Header classes and styling */
 
 .headerdiv {
-    background-color: #ff9900;
+    background-color: #99ccff;
     width: 100%;
-    height: 64px;
+    height: 128px;
 }
 
 @media only screen and (max-width: 600px) {
     .headerdiv {
-        height: 48px;
+        height: 64px;
     }
 }
 
 .headerfg {
     background-color: transparent;
-    background-size: 15% auto;
+    background-size: 20% auto;
     background-position: left;
     background-repeat: no-repeat;
     width: 100%;
@@ -40,9 +40,9 @@ body {
 }
 
 .headerbg {
-    background-position: top right;
+    background-position: center right;
     background-repeat: no-repeat;
-    background-size: 7%;
+    background-size: 6%;
     width: inherit;
     height: inherit;
 }
@@ -55,21 +55,33 @@ body {
 
 .footerbar {
     width: 100%;
-    background-color: #ffcc00;
+    background-color: #99ccff;
     /* position: absolute; */
 }
 
 .footerbar a {
     font-family: THSarabun;
-    font-size: 4vw;
-    color: #fff;
+    font-size: 32px;
+    color: #0066ff;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .footerbar a {
+        font-size: 24px;
+    }
 }
 
 .footerbar p {
     font-family: THSarabun;
-    font-size: 32px;
-    color: #cc3300;
+    font-size: 48px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .footerbar p {
+        font-size: 32px;
+    }
 }
 
 .footerbar hr {
@@ -109,13 +121,20 @@ body {
 }
 
 .scrollbgcon {
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(153, 204, 255, 0.25) 6px, rgba(153, 204, 255, 0.25) 12px),
-    repeating-linear-gradient(-45deg, transparent, transparent 6px, rgba(153, 204, 255, 0.25) 6px, rgba(153, 204, 255, 0.25) 12px);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 8px, rgba(255, 153, 51, 0.25) 8px, rgba(153, 204, 255, 0.25) 16px),
+    repeating-linear-gradient(-45deg, transparent, transparent 8px, rgba(255, 153, 51, 0.25) 8px, rgba(153, 204, 255, 0.25) 16px);
     background-attachment: fixed, scroll;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
+    height: 164px;
+}
+
+@media only screen and (max-width: 600px) {
+    .scrollbgcon {
+        height: 82px;
+    }
 }
 
 /* Navibar styling */
@@ -130,7 +149,7 @@ body {
 }
 
 .navibtn {
-    background-color: #ffcc00;
+    background-color: #6699ff;
     border: none;
     color: #fff;
     display: block;
@@ -139,7 +158,7 @@ body {
     outline: none;
     text-align: left;
     width: 100%;
-    height: 46px;
+    height: 48px;
 }
 
 .navibtn:after {
@@ -157,15 +176,15 @@ body {
 }
 
 #navlink {
-	background-color: #ffedb5;
+	background-color: #ccffff;
     display: none;
     overflow: hidden;
 }
 
 .navilinks {
 	border: none;
-	border-top: solid #cc3300 1px;
-	color: #cc3300;
+	border-top: solid #6600ff 1px;
+	color: #6600ff;
     display: block;
     float: left;
 	font-family: THSarabun;
