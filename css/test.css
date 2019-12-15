@@ -13,75 +13,50 @@ body {
 /* Header classes and styling */
 
 .headerdiv {
-    background-color: #99ccff;
+    background-color: #9cf;
     width: 100%;
-    height: 128px;
+    height: 164px;
 }
 
 @media only screen and (max-width: 600px) {
     .headerdiv {
-        height: 64px;
+        height: 128px;
     }
 }
 
 .headerfg {
     background-color: transparent;
-    background-size: 20% auto;
+    background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
     width: 100%;
     height: inherit;
 }
-
+/* 
 @media only screen and (max-width: 600px) {
     .headerfg {
-        background-size: 30% auto;
+        background-size: 50% auto;
     }
-}
+} */
 
 .headerbg {
     background-position: center right;
     background-repeat: no-repeat;
-    background-size: 6%;
+    background-size: contain;
     width: inherit;
     height: inherit;
 }
 
 @media only screen and (max-width: 600px) {
     .headerbg {
-        background-size: 15% auto;
+        display: none;
     }
 }
 
 .footerbar {
     width: 100%;
-    background-color: #99ccff;
+    background-color: #9cf;
     /* position: absolute; */
-}
-
-.footerbar a {
-    font-family: THSarabun;
-    font-size: 32px;
-    color: #0066ff;
-    text-decoration: none;
-}
-
-@media only screen and (max-width: 600px) {
-    .footerbar a {
-        font-size: 24px;
-    }
-}
-
-.footerbar p {
-    font-family: THSarabun;
-    font-size: 48px;
-    color: #fff;
-}
-
-@media only screen and (max-width: 600px) {
-    .footerbar p {
-        font-size: 32px;
-    }
 }
 
 .footerbar hr {
@@ -116,13 +91,24 @@ body {
     .footerpart {
         float: none;
         width: 100%;
-        height: 164px;
+        height: 100px;
     }
 }
 
+.footerstitch {
+    width: inherit;
+    height: 84px;
+    background-color: #fff;
+    background-image: linear-gradient(#fff, transparent),
+    repeating-linear-gradient(45deg, transparent, transparent 16px, rgba(153, 204, 255, 0.50) 16px, rgba(153, 204, 255, 0.75) 32px),
+    repeating-linear-gradient(-45deg, transparent, transparent 16px, rgba(153, 204, 255, 0.50) 16px, rgba(153, 204, 255, 0.75) 32px);
+    background-repeat: no-repeat;
+
+}
+
 .scrollbgcon {
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 8px, rgba(255, 153, 51, 0.25) 8px, rgba(153, 204, 255, 0.25) 16px),
-    repeating-linear-gradient(-45deg, transparent, transparent 8px, rgba(255, 153, 51, 0.25) 8px, rgba(153, 204, 255, 0.25) 16px);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 16px, rgba(255, 153, 51, 0.25) 16px, rgba(153, 204, 255, 0.25) 32px),
+    repeating-linear-gradient(-45deg, transparent, transparent 16px, rgba(255, 153, 51, 0.25) 16px, rgba(153, 204, 255, 0.25) 32px);
     background-attachment: fixed, scroll;
     background-size: contain;
     background-position: center;
@@ -149,7 +135,7 @@ body {
 }
 
 .navibtn {
-    background-color: #6699ff;
+    background-color: #69f;
     border: none;
     color: #fff;
     display: block;
@@ -164,6 +150,9 @@ body {
 .navibtn:after {
     background: transparent;
     content: "Open Menu...";
+    font-family: THSarabun;
+    font-size: 24px;
+    line-height: 0;
     padding-left: 32px;
     position: relative;
     top: -8px;
@@ -176,15 +165,16 @@ body {
 }
 
 #navlink {
-	background-color: #ccffff;
+	background-color: transparent;
     display: none;
     overflow: hidden;
 }
 
 .navilinks {
+    background-color: #cff;
 	border: none;
-	border-top: solid #6600ff 1px;
-	color: #6600ff;
+	border-top: solid #60f 1px;
+	color: #60f;
     display: block;
     float: left;
 	font-family: THSarabun;
@@ -196,13 +186,15 @@ body {
 }
 
 .navilinks:hover {
-    background-color: #ffff99;
+    background-color: #ff9;
 }
 
 @media only screen and (max-width: 600px) {
     .navilinks {
         float: none;
         width: 100%;
+        outline: none;
+        border-radius: 0px;
     }
 }
 
@@ -230,7 +222,7 @@ p {
 .headerfont {
     color: #0d0d0d;
     font-family: Tangerine;
-    font-size: 8vw;
+    font-size: 128px;
     text-align: center;
 }
 
@@ -242,6 +234,42 @@ p {
 
 @media only screen and (max-width: 600px) {
     .headerfont {
-        font-size: 48px;
+        font-size: 64px;
     }
+}
+
+.aboutbartxt {
+    color: #009;
+    font-family: THSarabun;
+    font-size: 24px;
+    text-align: center;
+}
+
+.footbarheader {
+    font-family: THSarabun;
+    font-size: 48px;
+    color: #009;
+}
+
+@media only screen and (max-width: 600px) {
+    .footbarheader {
+        font-size: 32px;
+    }
+}
+
+.footerlinks {
+    font-family: THSarabun;
+    font-size: 32px;
+    color: #009;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .footerlinks {
+        font-size: 24px;
+    }
+}
+
+.footerlinks:hover {
+    color: #fff;
 }
